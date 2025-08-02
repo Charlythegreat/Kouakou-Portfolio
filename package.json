@@ -1,0 +1,89 @@
+{
+  "name": "charlain-kouakou-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel moderne avec design digital futuriste - Charlain Kouakou, Ingénieur Data & Analytics",
+  "type": "module",
+  "author": {
+    "name": "Charlain Kouakou",
+    "email": "tresorcharlain827@outlook.fr",
+    "url": "https://charlain-kouakou.dev"
+  },
+  "license": "MIT",
+  "homepage": "https://charlain-kouakou.github.io/portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlain-kouakou/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charlain-kouakou/portfolio/issues"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite",
+    "tailwindcss",
+    "data-engineering",
+    "automation",
+    "industry-4.0",
+    "futuristic-design",
+    "responsive",
+    "dark-theme"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@radix-ui/react-label": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@radix-ui/react-tabs": "^1.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.1",
+    "recharts": "^2.15.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "gh-pages": "^6.2.0",
+    "globals": "^15.14.0",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "tw-animate-css": "^1.0.1",
+    "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
