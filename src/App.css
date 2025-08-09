@@ -46,37 +46,48 @@
 
 :root {
   --radius: 0.625rem;
-  /* Futuristic Dark Theme Colors */
-  --background: #0a0a0f;
-  --foreground: #e4e4e7;
-  --card: #111118;
-  --card-foreground: #e4e4e7;
-  --popover: #111118;
-  --popover-foreground: #e4e4e7;
+  /* Light theme */
+  --background: #ffffff;
+  --foreground: #0a0a0f;
+
+  --card: #ffffff;
+  --card-foreground: #0a0a0f;
+
+  --popover: #ffffff;
+  --popover-foreground: #0a0a0f;
+
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --secondary: #1e1e2e;
-  --secondary-foreground: #a1a1aa;
-  --muted: #1e1e2e;
-  --muted-foreground: #71717a;
+
+  --secondary: #f4f4f5;
+  --secondary-foreground: #27272a;
+
+  --muted: #f4f4f5;
+  --muted-foreground: #6b7280;
+
   --accent: #6366f1;
   --accent-foreground: #ffffff;
+
   --destructive: #ef4444;
-  --border: #27272a;
-  --input: #27272a;
+  --destructive-foreground: #ffffff;
+
+  --border: #e4e4e7;
+  --input: #e4e4e7;
   --ring: #3b82f6;
+
   --chart-1: #3b82f6;
   --chart-2: #10b981;
   --chart-3: #f59e0b;
   --chart-4: #ef4444;
   --chart-5: #8b5cf6;
-  --sidebar: #111118;
-  --sidebar-foreground: #e4e4e7;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #111827;
   --sidebar-primary: #3b82f6;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #1e1e2e;
-  --sidebar-accent-foreground: #a1a1aa;
-  --sidebar-border: #27272a;
+  --sidebar-accent: #f4f4f5;
+  --sidebar-accent-foreground: #374151;
+  --sidebar-border: #e5e7eb;
   --sidebar-ring: #3b82f6;
   
   /* Custom futuristic colors */
@@ -89,29 +100,40 @@
 }
 
 .dark {
-  --background: #0a0a0f;
+   --background: #0a0a0f;
   --foreground: #e4e4e7;
+
   --card: #111118;
   --card-foreground: #e4e4e7;
+
   --popover: #111118;
   --popover-foreground: #e4e4e7;
+
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
+
   --secondary: #1e1e2e;
   --secondary-foreground: #a1a1aa;
+
   --muted: #1e1e2e;
   --muted-foreground: #71717a;
+
   --accent: #6366f1;
   --accent-foreground: #ffffff;
+
   --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
   --border: #27272a;
   --input: #27272a;
   --ring: #3b82f6;
+
   --chart-1: #3b82f6;
   --chart-2: #10b981;
   --chart-3: #f59e0b;
   --chart-4: #ef4444;
   --chart-5: #8b5cf6;
+
   --sidebar: #111118;
   --sidebar-foreground: #e4e4e7;
   --sidebar-primary: #3b82f6;
@@ -120,7 +142,6 @@
   --sidebar-accent-foreground: #a1a1aa;
   --sidebar-border: #27272a;
   --sidebar-ring: #3b82f6;
-}
 
 @layer base {
   * {
