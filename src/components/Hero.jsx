@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import cvUrl from '@/assets/CharlainkouakouCVGeneral.pdf';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -43,11 +44,14 @@ const Hero = () => {
     }
   };
 
+  // Use the emitted asset URL so it works in dev and production (including GitHub Pages subpaths)
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/CharlainkouakouCVGeneral.pdf';
+    link.href = cvUrl;
     link.download = 'Charlain_Kouakou_CV.pdf';
+    document.body.appendChild(link);
     link.click();
+    link.remove();
   };
 
   return (
@@ -153,4 +157,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
