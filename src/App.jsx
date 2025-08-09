@@ -11,16 +11,17 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    // Set initial dark mode
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
+ const getInitialTheme = () => {
+  const stored = localStorage.getItem('theme');
+  if (stored) return stored === 'dark';
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+};
+const [darkMode, setDarkMode] = useState(getInitialTheme);
+  
+useEffect(() => {
+  document.documentElement.classList.toggle('dark', darkMode);
+  localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+}, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
