@@ -90,7 +90,7 @@ jspm_packages/
 
 # Gatsby files
 .cache/
-public/
+# public/ - Commented out for portfolio assets
 
 # Storybook build outputs
 .out/

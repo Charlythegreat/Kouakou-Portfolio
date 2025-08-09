@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Menu, X, Download, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -6,13 +6,13 @@ const Navigation = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
-  const navItems = [
+  const navItems = useMemo(() => [
     { id: 'home', label: 'Accueil' },
     { id: 'about', label: 'À propos' },
     { id: 'projects', label: 'Projets' },
     { id: 'experience', label: 'Expérience' },
     { id: 'contact', label: 'Contact' }
-  ];
+  ], []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +30,7 @@ const Navigation = ({ darkMode, toggleDarkMode }) => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [navItems]);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -42,7 +42,7 @@ const Navigation = ({ darkMode, toggleDarkMode }) => {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/CharlainkouakouCVGeneral.pdf';
+    link.href = '/CharlainkouakouCVGeneral.pdf';
     link.download = 'Charlain_Kouakou_CV.pdf';
     link.click();
   };

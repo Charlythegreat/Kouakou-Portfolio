@@ -172,7 +172,7 @@ const Experience = () => {
           </TabsList>
 
           <TabsContent value="experience" className="space-y-8">
-            {experiences.map((exp, index) => (
+            {experiences.map((exp) => (
               <Card key={exp.id} className="tech-border">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -250,7 +250,7 @@ const Experience = () => {
           </TabsContent>
 
           <TabsContent value="education" className="space-y-8">
-            {education.map((edu, index) => (
+            {education.map((edu) => (
               <Card key={edu.id} className="tech-border">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
