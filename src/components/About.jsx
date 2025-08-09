@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Download, MapPin, Languages, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import cvUrl from '@/assets/CharlainkouakouCVGeneral.pdf';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,11 +47,13 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
-  const downloadCV = () => {
+   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/CharlainkouakouCVGeneral.pdf';
-    link.download = 'CharlainkouakouCVGeneral.pdf';
+    link.href = cvUrl;
+    link.download = 'Charlain_Kouakou_CV.pdf';
+    document.body.appendChild(link);
     link.click();
+    link.remove();
   };
 
   return (
