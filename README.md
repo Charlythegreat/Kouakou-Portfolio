@@ -61,7 +61,6 @@ pnpm run dev
 npm run dev
 ```
 
-Le site sera accessible sur `http://localhost:5173/`
 
 ### Scripts Disponibles
 
