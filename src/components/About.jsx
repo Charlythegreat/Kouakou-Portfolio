@@ -48,7 +48,7 @@ const About = () => {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/CharlainkouakouCVGeneral.pdf';
+    link.href = '/CharlainkouakouCVGeneral.pdf';
     link.download = 'Charlain_Kouakou_CV.pdf';
     link.click();
   };

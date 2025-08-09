@@ -12,7 +12,7 @@ const Projects = () => {
       id: 1,
       title: "Système de Monitoring Environnemental IoT",
       description: "Développement d'une solution complète pour l'analyse de données massives issues de capteurs environnementaux. Création de dashboards interactifs pour le suivi de la qualité de l'air en temps réel.",
-      image: "/src/assets/htGMfn8vMZ0G.jpg", // Abstract tech background
+      image: "/images/htGMfn8vMZ0G.jpg", // Abstract tech background
       technologies: ["Python", "IoT Sensors", "Real-time Processing", "Dashboard", "Big Data"],
       category: "Big Data & IoT",
       icon: <Cloud className="w-6 h-6" />,
@@ -29,7 +29,7 @@ const Projects = () => {
       id: 2,
       title: "Plateforme d'Automatisation des Processus ETL",
       description: "Conception et implémentation d'une solution d'automatisation des processus ETL utilisant Talend pour optimiser les flux de données entre différents systèmes d'information.",
-      image: "/src/assets/Y9zRJxCc4fF0.jpg", // Futuristic digital background
+      image: "/images/Y9zRJxCc4fF0.jpg", // Futuristic digital background
       technologies: ["Talend", "SQL", "Oracle", "MySQL", "Process Automation"],
       category: "Automatisation",
       icon: <Settings className="w-6 h-6" />,
@@ -46,7 +46,7 @@ const Projects = () => {
       id: 3,
       title: "Système de Gestion de Bases de Données Relationnelles",
       description: "Conception, modélisation et optimisation de bases de données relationnelles avec focus sur l'intégrité des données et les performances. Développement de requêtes SQL complexes.",
-      image: "/src/assets/qlz9xlVuoD4j.jpg", // Vector futuristic background
+      image: "/images/qlz9xlVuoD4j.jpg", // Vector futuristic background
       technologies: ["SQL", "MySQL", "SQL Server", "Oracle", "Database Design"],
       category: "Base de Données",
       icon: <Database className="w-6 h-6" />,
@@ -63,7 +63,7 @@ const Projects = () => {
       id: 4,
       title: "Dashboard Analytics Industriel",
       description: "Création de tableaux de bord interactifs pour l'analyse de données industrielles utilisant Power BI et Tableau. Visualisation de KPIs critiques pour la prise de décision.",
-      image: "/src/assets/EDfiecX3fOTk.jpg", // High tech abstract background
+      image: "/images/EDfiecX3fOTk.jpg", // High tech abstract background
       technologies: ["Power BI", "Tableau", "Excel", "Data Visualization", "KPI"],
       category: "Visualisation",
       icon: <BarChart3 className="w-6 h-6" />,
@@ -80,7 +80,7 @@ const Projects = () => {
       id: 5,
       title: "Système de Contrôle Automatisé (ACS TP)",
       description: "Développement de systèmes de contrôle automatisés pour l'industrie 4.0. Intégration de capteurs IoT et algorithmes de contrôle pour l'optimisation des processus industriels.",
-      image: "/src/assets/jmsyfHTSofsr.jpg", // Futuristic digital background
+      image: "/images/jmsyfHTSofsr.jpg", // Futuristic digital background
       technologies: ["Control Systems", "IoT", "BPMN", "UML", "Industrial Automation"],
       category: "Automatisation Industrielle",
       icon: <Cpu className="w-6 h-6" />,
@@ -97,7 +97,7 @@ const Projects = () => {
       id: 6,
       title: "Solution de Monitoring Temps Réel",
       description: "Développement d'une solution de monitoring technique en temps réel pour renforcer la fiabilité des systèmes. Focus sur la Data Quality et la détection d'anomalies.",
-      image: "/src/assets/l3npxiBNgZg0.jpg", // Abstract technology background
+      image: "/images/l3npxiBNgZg0.jpg", // Abstract technology background
       technologies: ["Python", "Real-time Monitoring", "Data Quality", "Anomaly Detection"],
       category: "Monitoring",
       icon: <Zap className="w-6 h-6" />,

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { ChevronDown, Mail, Linkedin, Github, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -7,12 +7,12 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const titles = [
+  const titles = useMemo(() => [
     'Ingénieur Data & Analytics',
     'Spécialiste Automatisation',
     'Expert Big Data & IoT',
     'Développeur de Solutions'
-  ];
+  ], []);
 
   useEffect(() => {
     const currentTitle = titles[currentIndex];
@@ -45,7 +45,7 @@ const Hero = () => {
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/CharlainkouakouCVGeneral.pdf';
+    link.href = '/CharlainkouakouCVGeneral.pdf';
     link.download = 'Charlain_Kouakou_CV.pdf';
     link.click();
   };
