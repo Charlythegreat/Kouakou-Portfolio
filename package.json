@@ -9,13 +9,13 @@
     "url": "https://charlain-kouakou.dev"
   },
   "license": "MIT",
-  "homepage": "https://charlain-kouakou.github.io/portfolio",
+  "homepage": "https://charlythegreat.github.io/kouakou-portfolio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/charlain-kouakou/portfolio.git"
+    "url": "https://github.com/Charlythegreat/kouakou-portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/charlain-kouakou/portfolio/issues"
+    "url": "https://github.com/Charlythegreat/kouakou-portfolio/issues"
   },
   "keywords": [
     "portfolio",
@@ -85,5 +85,8 @@
       "last 1 safari version"
     ]
   }
+<<<<<<< Updated upstream
 }
-
+=======
+}
+>>>>>>> Stashed changes
