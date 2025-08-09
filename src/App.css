@@ -142,6 +142,7 @@
   --sidebar-accent-foreground: #a1a1aa;
   --sidebar-border: #27272a;
   --sidebar-ring: #3b82f6;
+}
 
 @layer base {
   * {
