@@ -62,7 +62,7 @@ const Experience = () => {
       school: "Université Nationale des Sciences et de la technologie MISIS",
       location: "Moscou, Russie",
       period: "2023 - 2025",
-      status: "En cours",
+      status: "Complété",
       description: "Formation avancée en automatisation industrielle et transformation numérique des processus technologiques.",
       specializations: [
         "Automatisation des processus industriels",
@@ -127,11 +127,12 @@ const Experience = () => {
       location: "Abidjan, Côte d'Ivoire",
       period: "2013 - 2016",
       status: "Complété",
-      description: "Formation technique de base en sciences appliquées.",
+      description: "Formation technique en sciences Biochimique.",
       specializations: [
         "Sciences techniques",
-        "Électrotechnique",
-        "Mécanique appliquée",
+        "Physique",
+        "sciences Biologique",
+        "Chimie & Biochimie",
         "Informatique de base"
       ]
     }
