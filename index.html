@@ -7,10 +7,22 @@
     <meta name="description" content="Portfolio professionnel de Charlain Kouakou - Ingénieur en Automatisation Industrielle | Data & Industrie 4.0" />
     <meta name="keywords" content="Charlain Kouakou, Data Engineer, Analytics Engineer, Automatisation Industrielle, Big Data, IoT" />
     <title>Charlain Kouakou - Ingénieur Data & Automatisation</title>
+    <script type="text/javascript">
+      // SPA redirect handler for GitHub Pages (pairs with 404.html)
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-
