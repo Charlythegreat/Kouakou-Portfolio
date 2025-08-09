@@ -4,8 +4,8 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Ensure assets are served under the GitHub Pages project path
-  base: '/kouakou-portfolio/',
+  // Serve assets from the site root on Vercel
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
