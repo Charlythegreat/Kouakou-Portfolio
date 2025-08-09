@@ -2,7 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- use a relative path so it works under /kouakou-portfolio/ -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio professionnel de Charlain Kouakou - Ingénieur en Automatisation Industrielle | Data & Industrie 4.0" />
     <meta name="keywords" content="Charlain Kouakou, Data Engineer, Analytics Engineer, Automatisation Industrielle, Big Data, IoT" />
@@ -23,6 +24,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- relative is fine; Vite will rewrite this correctly on build -->
+    <script type="module" src="src/main.jsx"></script>
   </body>
 </html>
