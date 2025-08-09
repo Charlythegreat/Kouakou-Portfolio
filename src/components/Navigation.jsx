@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Download, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+ import cvUrl from '@/assets/CharlainkouakouCVGeneral.pdf';
 
 const Navigation = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,11 +41,13 @@ const Navigation = ({ darkMode, toggleDarkMode }) => {
     setIsOpen(false);
   };
 
-  const downloadCV = () => {
+   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/src/assets/CharlainkouakouCVGeneral.pdf';
+    link.href = cvUrl;
     link.download = 'Charlain_Kouakou_CV.pdf';
+    document.body.appendChild(link);
     link.click();
+    link.remove();
   };
 
   return (
